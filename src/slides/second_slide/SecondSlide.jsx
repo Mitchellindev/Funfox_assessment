@@ -1,5 +1,10 @@
 import { Col, Form, FormGroup, Input, Label } from "reactstrap";
-import { RainyNight, SunnyDay } from "../../assets/index.js";
+import {
+  ClockIcon,
+  HouseIcon,
+  RainyNight,
+  SunnyDay,
+} from "../../assets/index.js";
 import "./SecondSlide.css";
 
 function SecondSlide() {
@@ -12,7 +17,7 @@ function SecondSlide() {
             examples?
           </p>
           <p className="my-3 ">(take a minute to think about this)</p>
-          <div className="d-flex justify-content-around my-4 text-center">
+          <div className="d-flex justify-content-around mt-4 text-center">
             <figure>
               <img src={SunnyDay} alt="sunny night" />
               <figcaption>Sunny day at a beach</figcaption>
@@ -27,21 +32,24 @@ function SecondSlide() {
           <p>So, what do you think the definition of setting is?</p>
           <Form>
             <FormGroup row>
-              <Label for="guesses" sm={2}>
+              <Label for="guesses" sm={3}>
                 Any guesses?
               </Label>
               <Col sm={6}>
                 <Input id="guesses" name="guesses" type="text" />
               </Col>
-              <Col sm={4}>
-                <p>Hint: </p>
+              <Col sm={3}>
+                <span className="me-2">Hint: </span>
+                <img src={ClockIcon} alt="clock" className="me-1" />
+                <img src={HouseIcon} alt="house" />
               </Col>
             </FormGroup>
           </Form>
-          <div className="text-white px-3 py-1 rounded-3 elements_container ">
+          <div className="text-white px-3 py-2 mb-3 rounded-3 setting ">
             <p>
-              Setting is the time and place of a story. It often answers the
-              questions: when? and where?
+              Setting is the time <img src={ClockIcon} alt="clock" /> and place{" "}
+              <img src={HouseIcon} alt="house" /> of a story. It often answers
+              the questions: when? and where?
             </p>
           </div>
           <p>

@@ -7,7 +7,17 @@
   font-size: 32px;
 }
 
-.main_container p {
+.main_container p,
+#root
+  > div
+  > div.d-flex.gap-1
+  > .main_container
+  > div
+  > form
+  > div
+  > div
+  > span,
+#root > div > div.d-flex.gap-1 > .main_container > div > form > div > label {
   line-height: 29px;
   font-size: 24px;
 }
@@ -19,7 +29,13 @@
   margin-bottom: 0.5rem;
 }
 
-.elements_container {
+#guesses {
+  border: 4px dashed var(--ash);
+}
+.setting {
   background-color: var(--green);
   border: 4px dashed var(--aqua-color);
+}
+.setting > p > img {
+  width: 34.72px;
 }

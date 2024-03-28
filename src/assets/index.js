@@ -2,9 +2,11 @@ import BagIcon from "./images/bag.svg";
 import CallIcon from "./images/call.svg";
 import CharacterElement from "./images/character.svg";
 import ChildImage from "./images/child.svg";
+import ClockIcon from "./images/clock.svg";
 import ClosedBookIcon from "./images/closed_book.svg";
 import CloudImage from "./images/cloud.svg";
 import GraduationCap from "./images/graduation_cap.svg";
+import HouseIcon from "./images/house_icon.svg";
 import InfoIcon from "./images/info.svg";
 import Lesson from "./images/lesson.svg";
 import Logo from "./images/logo.svg";
@@ -25,9 +27,11 @@ export {
   CallIcon,
   CharacterElement,
   ChildImage,
+  ClockIcon,
   ClosedBookIcon,
   CloudImage,
   GraduationCap,
+  HouseIcon,
   InfoIcon,
   Lesson,
   Logo,
