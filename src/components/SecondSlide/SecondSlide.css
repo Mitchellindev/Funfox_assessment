@@ -8,21 +8,12 @@
 }
 
 .main_container p,
-#root
-  > div
-  > div.d-flex.gap-1
-  > .main_container
-  > div
-  > form
-  > div
-  > div
-  > span,
-#root > div > div.d-flex.gap-1 > .main_container > div > form > div > label {
+.guesses {
   line-height: 29px;
   font-size: 24px;
 }
-.main_container > div > div > figure:nth-child(1) > img,
-.main_container > div > div > figure:nth-child(2) > img {
+.main_container > div > div > div > figure:nth-child(1) > img,
+.main_container > div > div > div > figure:nth-child(2) > img {
   padding: 1rem;
   border: 4px dashed var(--ash);
   border-radius: 0.5rem;
@@ -38,4 +29,10 @@
 }
 .setting > p > img {
   width: 34.72px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main_container > div > div > form > div > div > img {
+    width: 34.72px;
+  }
 }

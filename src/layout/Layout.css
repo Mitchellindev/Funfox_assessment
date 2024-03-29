@@ -4,14 +4,18 @@
   width: 100%;
 }
 
-.main {
-  width: 100%;
-}
-#footer {
-  width: 1194px !important;
+#navigator {
+  width: 1025px !important;
   margin: auto;
 }
 
 .btn {
   background-color: #cd3f97 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  #navigator {
+    width: 90% !important;
+    margin: auto;
+  }
 }

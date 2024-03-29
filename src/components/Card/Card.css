@@ -15,22 +15,20 @@
   font-size: 24px;
 }
 
-.elements_container {
-  background-color: var(--green);
-  border: 4px dashed var(--aqua-color);
-}
-
-.lesson {
-  background-image: url(/src/assets/images/lesson.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 1025px;
-  height: 160px;
-}
-
 @media only screen and (max-width: 768px) {
   .main_container {
     width: 90%;
+  }
+  .main_container > div > div > div.lesson > p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .lesson {
+    padding-top: 2.8rem !important;
+    padding-left: 1.5rem;
+  }
+  .lesson > p:nth-child(2),
+  .lesson > p:nth-child(1) {
+    margin-bottom: 0 !important;
   }
 }

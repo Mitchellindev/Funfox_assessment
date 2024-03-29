@@ -1,0 +1,14 @@
+.elements_container {
+  background-color: var(--green);
+  border: 4px dashed var(--aqua-color);
+}
+
+.lesson {
+  background-image: url(/src/assets/images/lesson.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  object-fit: cover;
+  width: 1025px;
+  height: 160px;
+}

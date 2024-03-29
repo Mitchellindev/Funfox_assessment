@@ -10,7 +10,7 @@ import "./SecondSlide.css";
 function SecondSlide() {
   return (
     <>
-      <div className="d-flex-row m-auto  justify-content-center align-items-center rounded-4  py-3 px-4 z-0 main_container">
+      <div>
         <div>
           <p className="rounded-pill  py-1  m-auto fw-normal">
             Can you figure out the definition of setting from the following
@@ -32,14 +32,14 @@ function SecondSlide() {
           <p>So, what do you think the definition of setting is?</p>
           <Form>
             <FormGroup row>
-              <Label for="guesses" sm={3}>
+              <Label for="guesses" className="guesses" sm={3}>
                 Any guesses?
               </Label>
-              <Col sm={6}>
+              <Col sm={5}>
                 <Input id="guesses" name="guesses" type="text" />
               </Col>
-              <Col sm={3}>
-                <span className="me-2">Hint: </span>
+              <Col sm={4}>
+                <span className="me-2 guesses">Hint: </span>
                 <img src={ClockIcon} alt="clock" className="me-1" />
                 <img src={HouseIcon} alt="house" />
               </Col>

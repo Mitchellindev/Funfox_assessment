@@ -11,7 +11,7 @@ import "./FirstSlide.css";
 function FirstSlide() {
   return (
     <>
-      <div className="d-flex-row m-auto  justify-content-center align-items-center rounded-4  py-3 px-4 z-0 main_container">
+      <div>
         <div>
           <h2 className="rounded-pill px-4 py-1 text-white m-auto mb-2 text-center">
             Elements of Story Writing
@@ -30,12 +30,12 @@ function FirstSlide() {
             </p>
             <img src={ChildImage} alt="child thinking" />
           </div>
-          <div className="d-flex justify-content-between align-items-center my-2">
-            <img src={SettingElement} alt="" />
-            <img src={CharacterElement} alt="" />
-            <img src={PlotElement} alt="" />
-            <img src={ProblemElement} alt="" />
-            <img src={ResolutionElement} alt="" />
+          <div className="d-flex flex-wrap justify-content-between align-items-center my-2">
+            <img src={SettingElement} alt="setting " />
+            <img src={CharacterElement} alt="character" />
+            <img src={PlotElement} alt="plot" />
+            <img src={ProblemElement} alt="problem" />
+            <img src={ResolutionElement} alt="resolution" />
           </div>
           <p>
             You must be familiar with some of these. If not, do not worry! we
