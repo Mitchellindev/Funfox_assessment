@@ -1,4 +1,3 @@
-import { Outlet } from "react-router-dom";
 import {
   BagIcon,
   ClosedBookIcon,
@@ -22,28 +21,27 @@ function Layout() {
         <div className="d-flex  main">
           <div className="d-flex flex-column justify-content-between">
             <div>
-              <img src={PencilIcon} alt="" />
+              <img src={PencilIcon} alt="pencil" />
             </div>
             <div>
-              <img src={BagIcon} alt="" />
+              <img src={BagIcon} alt="bag" />
             </div>
             <div>
-              <img src={OpenBookIcon} alt="" />
+              <img src={OpenBookIcon} alt="open book" />
             </div>
           </div>
           <Card>
             <FirstSlide />
-            <Outlet />
           </Card>
           <div className="d-flex flex-shrink flex-column justify-content-between">
             <div>
-              <img src={RulerIcon} alt="" />
+              <img src={RulerIcon} alt=" ruler" />
             </div>
             <div>
-              <img src={ClosedBookIcon} alt="" />
+              <img src={ClosedBookIcon} alt="closed book" />
             </div>
             <div>
-              <img src={GraduationCap} alt="" />
+              <img src={GraduationCap} alt="cap" />
             </div>
           </div>
         </div>
