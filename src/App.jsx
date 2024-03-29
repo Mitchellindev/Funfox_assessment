@@ -12,7 +12,7 @@ import {
   PreviousIcon,
   RulerIcon,
 } from "./assets";
-import SecondSlide from "./slides/second_slide/SecondSlide";
+import FirstSlide from "./slides/first_slide/FirstSlide";
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
               <img src={OpenBookIcon} alt="" />
             </div>
           </div>
-          <SecondSlide />
+          <FirstSlide />
           <div className="d-flex flex-column justify-content-between">
             <div>
               <img src={RulerIcon} alt="" />
@@ -44,10 +44,35 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="d-flex justify-content-between px mx-4 py-3 mx-2">
+        <div className="d-flex justify-content-between px-4 py-3 " id="footer">
           <img src={CallIcon} alt="call" />
           <div>
             <img src={PreviousIcon} alt="previous icon" />
+            <div className="btn-group">
+              <button
+                type="button"
+                className="btn  dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              ></button>
+              <ul className="dropdown-menu">
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Action
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Another action
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Something else here
+                  </a>
+                </li>
+              </ul>
+            </div>
             <img src={NextIcon} alt="next icon" />
           </div>
           <img src={InfoIcon} alt="info icon" />
