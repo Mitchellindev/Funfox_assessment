@@ -21,6 +21,7 @@ import ResolutionElement from "./images/resolution.svg";
 import RulerIcon from "./images/ruler.svg";
 import SettingElement from "./images/setting.svg";
 import SunnyDay from "./images/sunny_day.svg";
+import WeekOne from "./images/week_1.svg";
 
 export {
   BagIcon,
@@ -46,4 +47,5 @@ export {
   RulerIcon,
   SettingElement,
   SunnyDay,
+  WeekOne,
 };
