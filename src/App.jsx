@@ -23,7 +23,7 @@ function App() {
   const slides = [<FirstSlide key={0} />, <SecondSlide key={1} />];
   return (
     <>
-      <div className=" position-relative justify-content-center align-items-center app_container ">
+      <div className=" justify-content-center align-items-center app_container ">
         <img src={Logo} alt="funfox logo" />
         {currentSlide == 0 && <img src={WeekOne} alt="funfox logo" />}
         <div className="d-flex gap-1 ">

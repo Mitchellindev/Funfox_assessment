@@ -1,6 +1,6 @@
 .main_container {
   background-color: var(--white);
-  width: 1194px;
+  width: 1065px;
 }
 .main_container h2 {
   background-color: var(--base-color);
@@ -27,4 +27,10 @@
   background-size: contain;
   width: 1025px;
   height: 160px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main_container {
+    width: 90%;
+  }
 }
