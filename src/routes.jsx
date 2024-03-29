@@ -11,7 +11,7 @@ const router = createBrowserRouter([
     path: "/",
     element: <Layout />,
     children: [
-      { path: "slide1", element: <FirstSlide /> },
+      { path: "/", element: <FirstSlide /> },
       { path: "slide2", element: <SecondSlide /> },
     ],
   },

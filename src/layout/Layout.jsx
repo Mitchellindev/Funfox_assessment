@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import {
   BagIcon,
   ClosedBookIcon,
@@ -8,7 +9,6 @@ import {
   RulerIcon,
 } from "../assets";
 import Card from "../components/Card/Card";
-import FirstSlide from "../components/FirstSlide/FirstSlide";
 import Navigator from "../components/Navigator/Navigator";
 import "./Layout.css";
 
@@ -31,7 +31,7 @@ function Layout() {
             </div>
           </div>
           <Card>
-            <FirstSlide />
+            <Outlet />
           </Card>
           <div className="d-flex flex-shrink flex-column justify-content-between">
             <div>

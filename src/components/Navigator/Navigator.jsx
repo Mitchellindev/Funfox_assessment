@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { CallIcon, InfoIcon, NextIcon, PreviousIcon } from "../../assets";
 
 const Navigator = () => {
-  const routes = ["/slide1", "/slide2"];
+  const routes = ["/", "/slide2"];
   return (
     <div className="d-flex justify-content-between px-4 py-3 " id="navigator">
       <img src={CallIcon} alt="call" />
