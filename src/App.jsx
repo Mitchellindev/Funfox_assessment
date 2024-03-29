@@ -26,7 +26,7 @@ function App() {
       <div className=" justify-content-center align-items-center app_container ">
         <img src={Logo} alt="funfox logo" />
         {currentSlide == 0 && <img src={WeekOne} alt="funfox logo" />}
-        <div className="d-flex gap-1 ">
+        <div className="d-flex gap-1 main">
           <div className="d-flex flex-column justify-content-between">
             <div>
               <img src={PencilIcon} alt="" />

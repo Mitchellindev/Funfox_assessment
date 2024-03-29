@@ -3,6 +3,10 @@
   height: 100%;
   width: 100%;
 }
+
+.main {
+  width: 100%;
+}
 #footer {
   width: 1194px !important;
   margin: auto;
