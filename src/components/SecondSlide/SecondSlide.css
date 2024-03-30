@@ -31,6 +31,13 @@
   width: 34.72px;
 }
 
+@media only screen and (max-width: 426px) {
+  .guesses {
+    line-height: 20px;
+    font-size: 16px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .main_container > div > div > form > div > div > img {
     width: 34.72px;

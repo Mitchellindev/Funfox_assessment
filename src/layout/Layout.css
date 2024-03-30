@@ -23,6 +23,13 @@
   background-color: #cd3f97 !important;
 }
 
+@media only screen and (max-width: 426px) {
+  .curly-dashes img,
+  .curly-line img {
+    width: 30px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #navigator {
     width: 90% !important;

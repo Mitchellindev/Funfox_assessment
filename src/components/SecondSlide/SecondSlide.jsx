@@ -17,7 +17,7 @@ function SecondSlide() {
             examples?
           </p>
           <p className="my-3 ">(take a minute to think about this)</p>
-          <div className="d-flex justify-content-around mt-4 text-center">
+          <div className="d-flex flex-column flex-md-row justify-content-around mt-4 text-center">
             <figure>
               <img src={SunnyDay} alt="sunny night" />
               <figcaption>Sunny day at a beach</figcaption>

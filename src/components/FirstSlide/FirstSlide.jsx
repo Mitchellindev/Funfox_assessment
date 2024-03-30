@@ -13,9 +13,11 @@ function FirstSlide() {
     <>
       <div>
         <div>
-          <h2 className="rounded-pill px-4 py-1 text-white m-auto mb-2 text-center">
-            Elements of Story Writing
-          </h2>
+          <div className="d-flex">
+            <h2 className="rounded-pill px-4 py-1 text-white m-auto mb-2 text-center">
+              Elements of Story Writing
+            </h2>
+          </div>
           <p className="mb-2">
             Welcome to term 2 of Writers Club. Are you excited for this amazing
             journey? Over the next week, we will be practicing the different
@@ -30,7 +32,7 @@ function FirstSlide() {
             </p>
             <img src={ChildImage} alt="child thinking" />
           </div>
-          <div className="d-flex flex-wrap justify-content-between align-items-center my-2">
+          <div className="d-flex gap-2 flex-wrap justify-content-center justify-content-md-between align-items-center my-2">
             <img src={SettingElement} alt="setting " />
             <img src={CharacterElement} alt="character" />
             <img src={PlotElement} alt="plot" />
