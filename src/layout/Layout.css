@@ -8,6 +8,9 @@
   width: 1025px !important;
   margin: auto;
 }
+.Btn {
+  background-color: transparent;
+}
 
 .btn {
   background-color: #cd3f97 !important;

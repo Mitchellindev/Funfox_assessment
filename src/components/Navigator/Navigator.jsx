@@ -1,15 +1,30 @@
-import { Link } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { CallIcon, InfoIcon, NextIcon, PreviousIcon } from "../../assets";
 
 const Navigator = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const routes = ["/", "/slide2"];
+
+  const handleNext = () => {
+    navigate(routes[1]);
+  };
+  const handlePrev = () => {
+    navigate(routes[routes.length - 2]);
+  };
+
+  const currentRouteIndex = routes.findIndex(
+    (route) => route === location.pathname
+  );
+
   return (
     <div className="d-flex justify-content-between px-4 py-3 " id="navigator">
       <img src={CallIcon} alt="call" />
       <div className="d-flex align-items-center">
-        <Link to={routes[0]}>
+        <button onClick={handlePrev} className="border-0 Btn">
           <img src={PreviousIcon} alt="previous icon" />
-        </Link>
+        </button>
+
         <div className="dropdown">
           <button
             className="btn text-white dropdown-toggle"
@@ -17,7 +32,7 @@ const Navigator = () => {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            {routes.length - 1}
+            {currentRouteIndex + 1}
           </button>
           <ul className="dropdown-menu">
             <li>
@@ -33,9 +48,9 @@ const Navigator = () => {
           </ul>
         </div>
 
-        <Link to={routes[1]}>
+        <button onClick={handleNext} className="border-0 Btn">
           <img src={NextIcon} alt="next icon" />
-        </Link>
+        </button>
       </div>
       <img src={InfoIcon} alt="info icon" />
     </div>
