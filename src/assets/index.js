@@ -5,6 +5,8 @@ import ChildImage from "./images/child.svg";
 import ClockIcon from "./images/clock.svg";
 import ClosedBookIcon from "./images/closed_book.svg";
 import CloudImage from "./images/cloud.svg";
+import CurlyDashes from "./images/curly_dashes.svg";
+import CurlyLine from "./images/curly_line.svg";
 import GraduationCap from "./images/graduation_cap.svg";
 import HouseIcon from "./images/house_icon.svg";
 import InfoIcon from "./images/info.svg";
@@ -16,6 +18,7 @@ import PencilIcon from "./images/pencil.svg";
 import PlotElement from "./images/plot.svg";
 import PreviousIcon from "./images/previous.svg";
 import ProblemElement from "./images/problem.svg";
+import QuestionIcon from "./images/question.svg";
 import RainyNight from "./images/rainy_night.svg";
 import ResolutionElement from "./images/resolution.svg";
 import RulerIcon from "./images/ruler.svg";
@@ -31,6 +34,8 @@ export {
   ClockIcon,
   ClosedBookIcon,
   CloudImage,
+  CurlyDashes,
+  CurlyLine,
   GraduationCap,
   HouseIcon,
   InfoIcon,
@@ -42,6 +47,7 @@ export {
   PlotElement,
   PreviousIcon,
   ProblemElement,
+  QuestionIcon,
   RainyNight,
   ResolutionElement,
   RulerIcon,

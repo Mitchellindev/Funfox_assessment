@@ -4,6 +4,13 @@
   width: 100%;
 }
 
+.curly-dashes {
+  background-image: url("../assets/images/curly_dashes.svg");
+}
+.curly-line {
+  background-image: url("../assets/images/curly_line.svg");
+}
+
 #navigator {
   width: 1025px !important;
   margin: auto;

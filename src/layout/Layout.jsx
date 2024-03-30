@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import {
   BagIcon,
   ClosedBookIcon,
@@ -6,20 +6,23 @@ import {
   Logo,
   OpenBookIcon,
   PencilIcon,
+  QuestionIcon,
   RulerIcon,
+  WeekOne,
 } from "../assets";
 import Card from "../components/Card/Card";
 import Navigator from "../components/Navigator/Navigator";
 import "./Layout.css";
 
 function Layout() {
+  const location = useLocation();
   return (
     <>
-      <div className=" justify-content-center align-items-center app_container ">
+      <div className=" app_container ">
         <img src={Logo} alt="funfox logo" />
-        {/* {currentSlide == 0 && <img src={WeekOne} alt="funfox logo" />} */}
-        <div className="d-flex  main">
-          <div className="d-flex flex-column justify-content-between">
+        {location.pathname === "/" && <img src={WeekOne} alt="week one" />}
+        <div className="d-flex justify-content-center align-items-between main">
+          <div className="d-flex flex-column curly-dashes justify-content-between">
             <div>
               <img src={PencilIcon} alt="pencil" />
             </div>
@@ -33,14 +36,20 @@ function Layout() {
           <Card>
             <Outlet />
           </Card>
-          <div className="d-flex flex-shrink flex-column justify-content-between">
+          <div className="d-flex curly-line flex-column justify-content-between">
             <div>
               <img src={RulerIcon} alt=" ruler" />
             </div>
-            <div>
-              <img src={ClosedBookIcon} alt="closed book" />
+            <div className="ms-auto">
+              {location.pathname === "/" && (
+                <img src={ClosedBookIcon} alt="closed book" />
+              )}
+
+              {location.pathname === "/slide2" && (
+                <img src={QuestionIcon} alt="question icon" />
+              )}
             </div>
-            <div>
+            <div className="ms-auto">
               <img src={GraduationCap} alt="cap" />
             </div>
           </div>
