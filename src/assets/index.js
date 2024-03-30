@@ -1,5 +1,6 @@
 import BagIcon from "./images/bag.svg";
 import CallIcon from "./images/call.svg";
+import Cancel from "./images/cancel.svg";
 import CharacterElement from "./images/character.svg";
 import ChildImage from "./images/child.svg";
 import ClockIcon from "./images/clock.svg";
@@ -29,6 +30,7 @@ import WeekOne from "./images/week_1.svg";
 export {
   BagIcon,
   CallIcon,
+  Cancel,
   CharacterElement,
   ChildImage,
   ClockIcon,

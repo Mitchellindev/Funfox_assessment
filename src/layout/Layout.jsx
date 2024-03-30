@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import {
   BagIcon,
@@ -11,14 +12,24 @@ import {
   WeekOne,
 } from "../assets";
 import Card from "../components/Card/Card";
+import GuideSheet from "../components/GuideSheet/GuideSheet";
 import Navigator from "../components/Navigator/Navigator";
 import "./Layout.css";
 
 function Layout() {
   const location = useLocation();
+  const [showGuideSheet, setShowGuideSheet] = useState(false);
   return (
     <>
       <div className=" app_container ">
+        {showGuideSheet && (
+          <GuideSheet
+            onCancel={() => {
+              setShowGuideSheet(false);
+            }}
+          />
+        )}
+
         <img src={Logo} alt="funfox logo" />
         {location.pathname === "/" && <img src={WeekOne} alt="week one" />}
         <div className="d-flex justify-content-center align-items-between main">
@@ -46,7 +57,13 @@ function Layout() {
               )}
 
               {location.pathname === "/slide2" && (
-                <img src={QuestionIcon} alt="question icon" />
+                <img
+                  src={QuestionIcon}
+                  alt="question icon"
+                  onClick={() => {
+                    setShowGuideSheet(true);
+                  }}
+                />
               )}
             </div>
             <div className="ms-auto">
