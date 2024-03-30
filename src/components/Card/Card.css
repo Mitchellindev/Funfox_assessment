@@ -16,9 +16,10 @@
 
 @media only screen and (max-width: 426px) {
   .main_container h2,
-  .main_container p {
+  .main_container p,
+  #root > div > .main_container > div > div > p {
     line-height: 20px;
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .elements_container > img {
     display: none;
